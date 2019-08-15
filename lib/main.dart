@@ -55,7 +55,76 @@ class _HomepageState extends State<Homepage> {
                 onTap: () {},
                 child: ListTile(
                   title: Text('Home Page'),
-                  leading: new Icon(Icons.home),
+                  leading: new Icon(
+                    Icons.home,
+                    color: Colors.redAccent,
+                  ),
+                ),
+              ),
+
+              InkWell(
+                onTap: () {},
+                child: ListTile(
+                  title: Text('My account'),
+                  leading: new Icon(
+                    Icons.account_box,
+                    color: Colors.redAccent,
+                  ),
+                ),
+              ),
+
+              InkWell(
+                onTap: () {},
+                child: ListTile(
+                  title: Text('My orders'),
+                  leading: new Icon(
+                    Icons.shopping_basket,
+                    color: Colors.redAccent,
+                  ),
+                ),
+              ),
+
+              InkWell(
+                onTap: () {},
+                child: ListTile(
+                  title: Text('Categories'),
+                  leading: new Icon(
+                    Icons.category,
+                    color: Colors.redAccent,
+                  ),
+                ),
+              ),
+
+              InkWell(
+                onTap: () {},
+                child: ListTile(
+                  title: Text('Favourites'),
+                  leading: new Icon(
+                    Icons.favorite,
+                    color: Colors.redAccent,
+                  ),
+                ),
+              ),
+
+              Divider(),
+
+              InkWell(
+                onTap: () {},
+                child: ListTile(
+                  title: Text('Settings'),
+                  leading: new Icon(
+                    Icons.settings,
+                  ),
+                ),
+              ),
+
+              InkWell(
+                onTap: () {},
+                child: ListTile(
+                  title: Text('About'),
+                  leading: new Icon(
+                    Icons.help_outline,
+                  ),
                 ),
               )
             ],
