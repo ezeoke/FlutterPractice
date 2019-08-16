@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:carousel_pro/carousel_pro.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -17,6 +18,7 @@ class _HomepageState extends State<Homepage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: new AppBar(
+          elevation: 0.0,
           title: Text('Fashapp'),
           backgroundColor: Colors.red,
           actions: <Widget>[
@@ -48,7 +50,7 @@ class _HomepageState extends State<Homepage> {
                     child: new Icon(Icons.person, color: Colors.blue),
                   ),
                 ),
-                decoration: new BoxDecoration(color: Colors.purple),
+                decoration: new BoxDecoration(color: Colors.red),
               ),
               //body
               InkWell(
