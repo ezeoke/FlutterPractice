@@ -28,6 +28,12 @@ class _HomepageState extends State<Homepage> {
           AssetImage('images/tech.jpeg'),
           AssetImage('images/weed.jpeg'),
         ],
+        autoplay: false,
+        animationCurve: Curves.fastOutSlowIn,
+        animationDuration: Duration(milliseconds: 5000),
+        dotSize: 4,
+        indicatorBgPadding: 2,
+        dotColor: Colors.red,
       ),
     );
 

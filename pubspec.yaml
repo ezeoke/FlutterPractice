@@ -43,15 +43,14 @@ flutter:
   # assets:
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
-assets:
-  - images/baby.jpeg
-  - images/cute.jpeg
-  - images/fingers.jpeg
-  - images/sneaker.jpeg
-  - images/tech.jpeg
-  - images/weed.jpeg
+  assets:
+    - images/baby.jpeg
+    - images/cute.jpeg
+    - images/fingers.jpeg
+    - images/sneaker.jpeg
+    - images/tech.jpeg
+    - images/weed.jpeg
   # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
   # To add custom fonts to your application, add a fonts section here,
