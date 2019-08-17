@@ -26,12 +26,6 @@ class _ProductsState extends State<Products> {
       'price': 1500
     },
     {
-      'name': 'Makeup',
-      'picture': 'images/products/makeup.jpg',
-      'old_price': 1720,
-      'price': 1500
-    },
-    {
       'name': 'Phone',
       'picture': 'images/products/phone.jpg',
       'old_price': 1720,
@@ -61,7 +55,7 @@ class _ProductsState extends State<Products> {
         return Single_product(
           prod_name: product_list[index]['name'],
           prod_pics: product_list[index]['picture'],
-          prod_oldPrice: product_list[index]['Old_price'],
+          prod_oldPrice: product_list[index]['old_price'],
           prod_price: product_list[index]['price'],
         );
       },
@@ -80,8 +74,41 @@ class Single_product extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text('new'),
+    return Card(
+      child: Hero(
+        tag: prod_name,
+        child: Material(
+          child: InkWell(
+            onTap: () {},
+            child: GridTile(
+                footer: Container(
+                  color: Colors.white70,
+                  child: ListTile(
+                    leading: Text(
+                      prod_name,
+                      style: TextStyle(fontWeight: FontWeight.bold),
+                    ),
+                    title: Text(
+                      '\N$prod_price',
+                      style: TextStyle(
+                          color: Colors.red, fontWeight: FontWeight.w800),
+                    ),
+                    subtitle: Text(
+                      '\N$prod_oldPrice',
+                      style: TextStyle(
+                          color: Colors.black54,
+                          fontWeight: FontWeight.w800,
+                          decoration: TextDecoration.lineThrough),
+                    ),
+                  ),
+                ),
+                child: Image.asset(
+                  prod_pics,
+                  fit: BoxFit.cover,
+                )),
+          ),
+        ),
+      ),
     );
   }
 }
