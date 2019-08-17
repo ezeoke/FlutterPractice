@@ -3,6 +3,7 @@ import 'package:carousel_pro/carousel_pro.dart';
 
 //my own imports
 import 'package:my_flutter_app/components/horizontal_listView.dart';
+import 'package:my_flutter_app/components/products.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -24,12 +25,12 @@ class _HomepageState extends State<Homepage> {
       child: Carousel(
         boxFit: BoxFit.cover,
         images: [
-          AssetImage('images/products/baby.jpeg'),
-          AssetImage('images/products/cute.jpeg'),
-          AssetImage('images/products/fingers.jpeg'),
-          AssetImage('images/products/sneaker.jpeg'),
-          AssetImage('images/products/tech.jpeg'),
-          AssetImage('images/products/weed.jpeg'),
+          AssetImage('images/carousel/baby.jpeg'),
+          AssetImage('images/carousel/cute.jpeg'),
+          AssetImage('images/carousel/fingers.jpeg'),
+          AssetImage('images/carousel/sneaker.jpeg'),
+          AssetImage('images/carousel/tech.jpeg'),
+          AssetImage('images/carousel/weed.jpeg'),
         ],
         autoplay: false,
         animationCurve: Curves.fastOutSlowIn,
@@ -168,7 +169,18 @@ class _HomepageState extends State<Homepage> {
           ),
 
           //Horizontal viewList
-          HorizontalListView()
+          HorizontalListView(),
+
+          //padding widget
+          new Padding(
+              padding: const EdgeInsets.all(10),
+              child: Text('Recent Products')),
+
+          //gridview
+          Container(
+            height: 320,
+            child: Products(),
+          )
         ],
       ),
     );

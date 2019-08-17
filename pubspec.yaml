@@ -44,18 +44,25 @@ flutter:
   #  - images/a_dot_burr.jpeg
   #  - images/a_dot_ham.jpeg
   assets:
-    - images/products/baby.jpeg
-    - images/products/cute.jpeg
-    - images/products/fingers.jpeg
-    - images/products/sneaker.jpeg
-    - images/products/tech.jpeg
-    - images/products/weed.jpeg
+    - images/carousel/baby.jpeg
+    - images/carousel/cute.jpeg
+    - images/carousel/fingers.jpeg
+    - images/carousel/sneaker.jpeg
+    - images/carousel/tech.jpeg
+    - images/carousel/weed.jpeg
     - images/categories/first.png
     - images/categories/eleventh.png
     - images/categories/forth.png
     - images/categories/second.png
     - images/categories/third.png
     - images/categories/tenth.png
+    - images/products/coffee.jpg
+    - images/products/makeup.jpg
+    - images/products/phone.jpg
+    - images/products/rollon.jpg
+    - images/products/slippers.jpg
+    - images/products/tv.jpg
+    - images/products/watch.jpg
   # An image asset can refer to one or more resolution-specific "variants", see
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
