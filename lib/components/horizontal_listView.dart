@@ -8,11 +8,30 @@ class HorizontalListView extends StatelessWidget {
       child: ListView(
         scrollDirection: Axis.horizontal,
         children: <Widget>[
-          Icon(Icons.account_box),
-          Icon(Icons.account_box),
-          Icon(Icons.account_box),
-          Icon(Icons.account_box),
-          Icon(Icons.account_box),
+          Category(
+            image_location: 'images/categories/first.png',
+            image_caption: 'Phones',
+          ),
+          Category(
+            image_location: 'images/categories/eleventh.png',
+            image_caption: 'Bags',
+          ),
+          Category(
+            image_location: 'images/categories/forth.png',
+            image_caption: 'Tvs',
+          ),
+          Category(
+            image_location: 'images/categories/second.png',
+            image_caption: 'ShowBox',
+          ),
+          Category(
+            image_location: 'images/categories/third.png',
+            image_caption: 'Projector',
+          ),
+          Category(
+            image_location: 'images/categories/tenth.png',
+            image_caption: 'SoundSystems',
+          ),
         ],
       ),
     );
@@ -28,13 +47,24 @@ class Category extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-        padding: const EdgeInsets.all(80),
+        padding: const EdgeInsets.all(2.0),
         child: InkWell(
           onTap: () {},
-          child: ListTile(
-            title: Image.asset(image_location),
-            subtitle: Text(image_caption),
-          ),
+          child: Container(
+              width: 120,
+              child: ListTile(
+                title: Image.asset(
+                  image_location,
+                  // width: 100,
+                  // height: 80,
+                ),
+                subtitle: Container(
+                    alignment: Alignment.topCenter,
+                    child: Text(
+                      image_caption,
+                      // style: TextStyle(fontSize: 13),
+                    )),
+              )),
         ));
   }
 }

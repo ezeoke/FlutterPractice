@@ -24,12 +24,12 @@ class _HomepageState extends State<Homepage> {
       child: Carousel(
         boxFit: BoxFit.cover,
         images: [
-          AssetImage('images/baby.jpeg'),
-          AssetImage('images/cute.jpeg'),
-          AssetImage('images/fingers.jpeg'),
-          AssetImage('images/sneaker.jpeg'),
-          AssetImage('images/tech.jpeg'),
-          AssetImage('images/weed.jpeg'),
+          AssetImage('images/products/baby.jpeg'),
+          AssetImage('images/products/cute.jpeg'),
+          AssetImage('images/products/fingers.jpeg'),
+          AssetImage('images/products/sneaker.jpeg'),
+          AssetImage('images/products/tech.jpeg'),
+          AssetImage('images/products/weed.jpeg'),
         ],
         autoplay: false,
         animationCurve: Curves.fastOutSlowIn,
